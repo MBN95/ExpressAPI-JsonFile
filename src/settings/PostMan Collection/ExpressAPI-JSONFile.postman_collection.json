@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "9bd28381-973d-4e7e-ac7e-684860ad0296",
+		"name": "ExpressAPI-JSONFile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "dishes",
+			"item": [
+				{
+					"name": "put request /dishes",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n          \"name\": \"JAWDROPPINGLY GOOD SMASH BURGER WITH OUR SIGNATURE SAUCE\",\r\n          \"category\": \"mains\",\r\n          \"label\": \"Hot\",\r\n          \"price\": \"1989.99\",\r\n          \"featured\": \"true\",\r\n          \"description\": \"Triple Layered Patties oozing with creamy cheese sauce and our spicy signature sauce adds to it like the cherry on top ;).\",\r\n          \"comments\": [\r\n               {\r\n                    \"rating\": 9,\r\n                    \"comment\": \"Imagine all the eatables, living in conFusion!\",\r\n                    \"author\": \"Tupac\",\r\n                    \"date\": \"2012-10-16T17:57:28.556094Z\"\r\n               },\r\n               {\r\n                    \"rating\": 10,\r\n                    \"comment\": \"Sends anyone to oh my LETS eat it!\",\r\n                    \"author\": \"Mohammad Ali\",\r\n                    \"date\": \"2014-09-05T17:57:28.556094Z\"\r\n               },\r\n               {\r\n                    \"rating\": 9,\r\n                    \"comment\": \"Wow Amazing!\",\r\n                    \"author\": \"Tyson Fury\",\r\n                    \"date\": \"2015-02-13T17:57:28.556094Z\"\r\n               },\r\n               {\r\n                    \"rating\": 9,\r\n                    \"comment\": \"Ultimate, Reaching for the stars!\",\r\n                    \"author\": \"Deontay Wilder\",\r\n                    \"date\": \"2013-12-02T17:57:28.556094Z\"\r\n               },\r\n               {\r\n                    \"rating\": 10,\r\n                    \"comment\": \"GETTING THAT GRUB G!\",\r\n                    \"author\": \"50 Cent\",\r\n                    \"date\": \"2011-12-02T17:57:28.556094Z\"\r\n               }\r\n          ]\r\n     }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/dishes/7588ebf0-5c32-4fab-bf89-2c5e8d84ab49newDish",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dishes",
+								"7588ebf0-5c32-4fab-bf89-2c5e8d84ab49newDish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "post request /dishes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"JAWDROPPINGLY GOOD SMASH BURGER WITH OUR SIGNATURE SAUCE\",\r\n        \"category\": \"mains\",\r\n        \"label\": \"Hot\",\r\n        \"price\": \"159.99\",\r\n        \"featured\": \"true\",\r\n        \"description\": \"Triple Layered Patties oozing with creamy cheese sauce and our spicy signature sauce adds to it like the cherry on top ;).\",\r\n        \"comments\": [\r\n          {\r\n            \"rating\": 5,\r\n            \"comment\": \"Imagine all the eatables, living in conFusion!\",\r\n            \"author\": \"Tupac\",\r\n            \"date\": \"2012-10-16T17:57:28.556094Z\"\r\n          },\r\n          {\r\n            \"rating\": 4,\r\n            \"comment\": \"Sends anyone to oh my LETS eat it!\",\r\n            \"author\": \"Mohammad Ali\",\r\n            \"date\": \"2014-09-05T17:57:28.556094Z\"\r\n          },\r\n          {\r\n            \"rating\": 3,\r\n            \"comment\": \"Wow Amazing!\",\r\n            \"author\": \"Tyson Fury\",\r\n            \"date\": \"2015-02-13T17:57:28.556094Z\"\r\n          },\r\n          {\r\n            \"rating\": 4,\r\n            \"comment\": \"Ultimate, Reaching for the stars!\",\r\n            \"author\": \"Deontay Wilder\",\r\n            \"date\": \"2013-12-02T17:57:28.556094Z\"\r\n          },\r\n          {\r\n            \"rating\": 2,\r\n            \"comment\": \"GETTING THAT GRUB G!\",\r\n            \"author\": \"50 Cent\",\r\n            \"date\": \"2011-12-02T17:57:28.556094Z\"\r\n          }\r\n        ]\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3003/dishes",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dishes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete request /dishes",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3003/dishes/8272b345-43d2-4f71-bee9-5c5cf61efafenewDish",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dishes",
+								"8272b345-43d2-4f71-bee9-5c5cf61efafenewDish"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get request /dishes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3003/dishes",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"dishes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
